@@ -63,7 +63,7 @@ spec:
           mountPath: /app
       containers:
       - name: gitea
-        image: quay.io/simbelmas/gitea-alpine:latest
+        image: quay.io/simbelmas/gitea:latest
         volumeMounts:
         - name: app-data
           mountPath: /var/lib/gitea
