@@ -52,7 +52,7 @@ spec:
         fsGroup: 82
       initContainers:
       - name: init
-        image: quay.io/simbelmas/alpine-tools:latest
+        image: quay.io/simbelmas/alpine-tools:stable
         command: ["gitea-init.sh"]
         volumeMounts:
         - name: gitea-conf
@@ -63,7 +63,7 @@ spec:
           mountPath: /app
       containers:
       - name: gitea
-        image: quay.io/simbelmas/gitea:latest
+        image: quay.io/simbelmas/gitea:stable
         volumeMounts:
         - name: app-data
           mountPath: /var/lib/gitea
