@@ -48,8 +48,8 @@ spec:
     spec:
       securityContext:
         runAsUser: 1001
-        runAsGroup: 82
-        fsGroup: 82
+        runAsGroup: 1001
+        fsGroup: 1001
       initContainers:
       - name: init
         image: quay.io/simbelmas/alpine-tools:stable
