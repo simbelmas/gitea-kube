@@ -105,9 +105,3 @@ spec:
   selector:
     app.kubernetes.io/part-of: gitea
     app.kubernetes.io/instance: gitea
-
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: gitea-app-ini

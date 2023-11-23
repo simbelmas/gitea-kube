@@ -14,9 +14,6 @@ configMapGenerator:
       - config/gitea-init.sh
     behavior: merge
 
-# Sample app.ini secret generation
-#secretGenerator:
-#  - name: gitea-app-ini
-#    files:
-#    - config/app.ini
-#    behavior: merge
+secretGenerator:
+  - name: gitea-app-ini
+    type: Opaque
