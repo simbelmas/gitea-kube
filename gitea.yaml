@@ -52,7 +52,7 @@ spec:
         fsGroup: 1001
       initContainers:
       - name: init
-        image: quay.io/simbelmas/alpine-tools:stable
+        image: quay.io/simbelmas/toolbox:stable
         command: ["gitea-init.sh"]
         volumeMounts:
         - name: gitea-conf
