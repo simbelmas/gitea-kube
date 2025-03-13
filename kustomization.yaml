@@ -12,7 +12,6 @@ configMapGenerator:
   - name: gitea-cm
     files:
       - config/gitea-init.sh
-      - config/app.ini
     behavior: merge
 
 secretGenerator:
