@@ -86,7 +86,6 @@ spec:
       - name: app-data
         persistentVolumeClaim:
           claimName: gitea-pvc
-  revisionHistoryLimit: 2
 
 ---
 apiVersion: v1
